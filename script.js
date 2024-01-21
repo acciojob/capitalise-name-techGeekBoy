@@ -1,8 +1,8 @@
-
-let capitalized = function(sent){
-    let str = sent.split(" ");
-    for(let i=0; i<str.length; i++){
-        str[i] = str[i][0].toUpperCase() + str[i].slice(1).toLowerCase();
+let capitalize = function(sent){
+    let words = sent.split(" ");
+    for(let i = 0; i < words.length; i++){
+        words[i] = words[i][0].toUpperCase() + words[i].slice(1).toLowerCase();
     }
-    return str.join(" ");
+    return words.join(" ");
 }
+
